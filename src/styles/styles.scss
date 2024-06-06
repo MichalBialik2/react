@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e0f7e9;
+  color: #2e7d32;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bbf9e3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  flex: 1;
+  padding: 2rem;
+}
+
+.add-bird-page {
+  margin: 10px;
+  display: flex;
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+      margin-right: 10px;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  .bird-list {
+    flex: 2;
+    margin-left: 10px;
+  }
+  .gallery-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c8e6c9;
+    border-radius: 8px;
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      background-color: white;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.quiz-page {
+  text-align: center;
+  form {
+    margin-top: 5rem;
+  }
+}
+
+nav {
+  background-color: #008049;
+  padding: 10px;
+  margin-bottom: 20px;
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  background-color: #65e047;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.comments-list {
+  margin-top: 20px;
+  .comment-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}
+
+.bird-gallery-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .gallery-item {
+    background-color: #a5d6a7;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    img {
+      width: 130px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  }
+}
